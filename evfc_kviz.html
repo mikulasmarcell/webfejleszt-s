@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mikulás Marcell">  
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <meta name="description" content="Erős Vár FC weboldala">
+    <link rel="stylesheet" href="stilus/evfcstyle.css">
+    <link rel="icon" type="image/x-icon" href="kepek/evfclogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Erős vár FC</title>
+
+    <script src="script/ellenorzo.js"></script>
+    
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><img src="kepek/erosvarfc.png" alt="logo" class="erosvarlogobal"></td>
+                <td><h1>Erős vár FC</h1></td>
+            </tr>
+        </table>
+    
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőképernyő</a></li>
+                <li><a href="evfc_jatekosok.html">Játékosok</a></li>
+                <li><a href="evfc_galeria.html">Galéria</a></li>
+                <li><a class="active" href="#">Kvíz kérdések</a></li>
+                <li><a href="evfc_jelentkezés.html">Jelentkezés</a></li>
+            </ul>
+        </nav>
+        <article>
+            
+                <br>
+
+                1. Ki volt ott az alapításnál?<br>
+                <label><input type="checkbox" name="ambrus"     id="ambrus">   <span id="helyes1">Schranz Ambrus  </span></label> <br>
+                <label><input type="checkbox" name="palotai"    id="palotai">  <span id="helytelen1">Palotai Bálint  </span></label> <br>
+                <label><input type="checkbox" name="fabiny"     id="fabiny">   <span id="helyes2">Fabiny Márton   </span></label> <br>
+                <label><input type="checkbox" name="laca"       id="laca">     <span id="helyes3">Regős László    </span></label> <br>
+                <label><input type="checkbox" name="szamos"     id="szamos">   <span id="helytelen2">Szamos Márton   </span></label> <br>
+                <label><input type="checkbox" name="aron"       id="aron">     <span id="helyes4">Schranz Áron    </span></label> <br>
+                <label><input type="checkbox" name="bakonyi"    id="bakonyi">  <span id="helyes5">Bakonyi Péter   </span></label> <br><br>
+        
+                2. Mikor alapult az Evfc? <br>
+                <label><input type="radio" name="alapitas" id="2010"><span id="helytelen3">2010</span></label><br>
+                <label><input type="radio" name="alapitas" id="2013"><span id="helytelen4">2013</span></label><br>
+                <label><input type="radio" name="alapitas" id="2015"><span id="helyes6">2015</span></label><br>
+                <label><input type="radio" name="alapitas" id="2018"><span id="helytelen5">2018</span></label><br><br>
+        
+                
+                3. Ki a csapat gólkirálya? <br>
+                <label><input type="radio" name="golkiraly" id="Palotai Bálint"><span id="helytelen6">Palotai Bálint</span></label><br>
+                <label><input type="radio" name="golkiraly" id="Regős Mátyás"><span id="helyes7">Regős Mátyás</span></label><br>
+                <label><input type="radio" name="golkiraly" id="Bakonyi Pál"><span id="helytelen7">Bakonyi Pál</span></label><br>
+                <label><input type="radio" name="golkiraly" id="Fabiny Márton"><span id="helytelen8">Fabiny Márton</span></label><br><br>
+
+                4. Hány piroslapot kapott Fróna Péter? <br>
+                <label><input type="radio" name="piros" id="egy"><span id="helytelen9">1</span></label><br>
+                <label><input type="radio" name="piros" id="ketto"><span id="helyes8">2</span></label><br>
+                <label><input type="radio" name="piros" id="harom"><span id="helytelen10">3</span></label><br>
+                <label><input type="radio" name="piros" id="negy"><span id="helytelen11">4</span></label><br><br>
+
+            
+                
+                5. Mikor volt az első bajnoki mérkőzés? <br>
+                <label><input type="radio" name="elsomeccs" id="egyegy"><span id="helyes9">2016. 09. 03.</span></label><br>
+                <label><input type="radio" name="elsomeccs" id="kettoketto"><span id="helytelen12">2016. 08. 05.</span></label><br>
+                <label><input type="radio" name="elsomeccs" id="haromharom"><span id="helytelen13">2017. 08. 07.</span></label><br>
+                <label><input type="radio" name="elsomeccs" id="negynegy"><span id="helytelen14">2019. 06. 06.</span></label><br><br>
+        
+               
+                6. Milyen színű a kapusmez? <br>
+                <label><input type="radio" name="kapus" id="egyegyegy"><span id="helytelen15">fehér</span></label><br>
+                <label><input type="radio" name="kapus" id="kettokettoketto"><span id="helytelen16">kék</span></label><br>
+                <label><input type="radio" name="kapus" id="haromharomharom"><span id="helytelen17">piros</span></label><br>
+                <label><input type="radio" name="kapus" id="negynegynegy"><span id="helyes10">fekete</span></label><br><br><hr>
+
+            
+                <input type="button" value="Elküldés" class="gomb"  id="mybutton" onclick="bekuld()">
+                       
+                
+
+                <p id="pontszam"></p>
+                
+           
+        </article>  
+        
+    </div>
+    <footer>Ez nem hivatalos oldal. Az oldal tanulmányi célú</footer>
+</body>
+</html>

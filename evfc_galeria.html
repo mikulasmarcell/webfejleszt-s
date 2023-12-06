@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mikulás Marcell">  
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <meta name="description" content="Erős Vár FC weboldala">
+    <link rel="stylesheet" href="stilus/evfcstyle.css">
+    <link rel="icon" type="image/x-icon" href="kepek/evfclogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Erős vár FC</title>
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/galleria-1.6.1/dist/galleria.js"></script>
+    <script src="script/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#images').galleria(
+                width = 500,
+                height = 500
+            );
+        });
+    </script>
+  
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><img src="kepek/erosvarfc.png" alt="logo" class="erosvarlogobal"></td>
+                <td><h1>Erős vár FC</h1></td>
+            </tr>
+        </table>
+    
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőképernyő</a></li>
+                <li><a href="evfc_jatekosok.html">Játékosok</a></li>
+                <li><a class="active" href="#">Galéria</a></li>
+                <li><a href="evfc_kviz.html">Kvíz kérdések</a></li>
+                <li><a href="evfc_jelentkezés.html">Jelentkezés</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="images" class="galleria">
+            <img src="kepek/csop/Csoportkep1.png" alt="Esős mérkőzés utáni kép"   title="Csoportkep"  class="csoportpic">
+            <img src="kepek/csop/Csoportkep2.jpg" alt="Nyári edzőmeccs"           title="Csoportkep"  class="csoportpic">
+            <img src="kepek/csop/Csoportkep3.JPG" alt="Évzáró mérkőzés"           title="Csoportkep"  class="csoportpic">
+            <img src="kepek/csop/Csoportkep4.jpg" alt="Meccs előtti megbeszélés"  title="Csoportkep"  class="csoportpic">
+            <img src="kepek/csop/Csoportkep5.jpg" alt="Bajnoki cím ünneplése"     title="Csoportkep"  class="csoportpic">
+            <img src="kepek/csop/Csoportkep6.jpg" alt="Győztes edzőmeccs"         title="Csoportkep"  class="csoportpic">
+            <img src="kepek/csop/Csoportkep7.jpg" alt="Meccs előtti himnusz"           title="Csoportkep"  class="csoportpic">
+            <br><br>s
+    </div> 
+    <footer>Ez nem hivatalos oldal. Az oldal tanulmányi célú</footer>
+</body>
+</html>
